@@ -16,5 +16,7 @@
 - [Majority Element](https://leetcode.com/problems/majority-element/)
 - [Majority Element II](https://leetcode.com/problems/majority-element-ii/)
 - [Unique Paths](https://leetcode.com/problems/unique-paths/)  
+- [Two Sum](https://leetcode.com/problems/two-sum/)
+- [4Sum](https://leetcode.com/problems/4sum/)
 
 
