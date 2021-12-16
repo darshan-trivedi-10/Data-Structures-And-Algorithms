@@ -18,5 +18,8 @@
 - [Unique Paths](https://leetcode.com/problems/unique-paths/)  
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 - [4Sum](https://leetcode.com/problems/4sum/)
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [Largest subarray with 0 sum](https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)  
+
 
 
