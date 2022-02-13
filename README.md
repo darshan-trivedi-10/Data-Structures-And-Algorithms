@@ -20,8 +20,16 @@
 - [x] [4Sum](https://leetcode.com/problems/4sum/)
 - [x] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [x] [Largest subarray with 0 sum](https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)  
-- [ ] [Repeat and Missing Number Array | Interviewbit](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)
+- [x] [Repeat and Missing Number Array | Interviewbit](https://www.interviewbit.com/problems/repeat-and-missing-number-array/)
 - [ ] [Count Inversions | Practice | GeeksforGeeks](https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1/)
 - [ ] [Reverse Pairs - LeetCode](https://leetcode.com/problems/reverse-pairs/)
 - [ ] [Subarray with given XOR | Interviewbit](https://www.interviewbit.com/problems/subarray-with-given-xor/)
 - [ ] [Longest Substring Without Repeating Characters - LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+## 2. Linked - List
+- [ ] [Reverse Linked List - LeetCode](https://leetcode.com/problems/reverse-linked-list/)
+- [ ] [Merge Two Sorted Lists - LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [ ] [Remove Nth Node From End of List - LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [ ] [Add Two Numbers - LeetCode](https://leetcode.com/problems/add-two-numbers/)
+- [ ] [Delete Node in a Linked List - LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+
