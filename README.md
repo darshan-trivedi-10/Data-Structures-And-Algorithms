@@ -25,3 +25,11 @@
 - [ ] [Reverse Pairs - LeetCode](https://leetcode.com/problems/reverse-pairs/)
 - [ ] [Subarray with given XOR | Interviewbit](https://www.interviewbit.com/problems/subarray-with-given-xor/)
 - [ ] [Longest Substring Without Repeating Characters - LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+## 2. Linked - List
+- [ ] [Reverse Linked List - LeetCode](https://leetcode.com/problems/reverse-linked-list/)
+- [ ] [Merge Two Sorted Lists - LeetCode](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [ ] [Remove Nth Node From End of List - LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [ ] [Add Two Numbers - LeetCode](https://leetcode.com/problems/add-two-numbers/)
+- [ ] [Delete Node in a Linked List - LeetCode](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+
