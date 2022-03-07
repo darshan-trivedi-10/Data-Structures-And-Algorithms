@@ -18,27 +18,31 @@ struct Node
     }
 };
 
-void leftViewFinder(Node *root, int level, vector<int> &ans)
+void left(Node *root, int level, vector<int> &ans)
 {
     if (root == NULL)
     {
         return;
     }
 
-    if (level == ans.size())
+    if (ans.size() == level)
     {
         ans.push_back(root->data);
     }
-
-    leftViewFinder(root->left, level + 1, ans);
-    leftViewFinder(root->right, level + 1, ans);
+    left(root->left, level + 1, ans);
+    left(root->right, level + 1, ans);
 }
 
+// Function to return a list containing elements of left view of the binary tree.
 vector<int> leftView(Node *root)
 {
     vector<int> ans;
-    leftViewFinder(root, 0, ans);
+    if (root == NULL)
+    {
+        return ans;
+    }
 
+    left(root, 0, ans);
     return ans;
 }
 

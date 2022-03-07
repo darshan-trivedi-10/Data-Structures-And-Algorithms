@@ -1,3 +1,5 @@
+// https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+
 #include <bits/stdc++.h>
 using namespace std;
 using lli = long long int;
@@ -23,10 +25,8 @@ public:
         }
 
         map<int, int> mpp; // First value is vertical level & second value is val.
-
         queue<pair<Node *, int>> q;
         q.push({root, 0});
-
         while (!q.empty())
         {
             int s = q.size();
@@ -45,19 +45,16 @@ public:
                 {
                     q.push({temp->left, line - 1});
                 }
-
                 if (temp->right)
                 {
                     q.push({temp->right, line + 1});
                 }
             }
         }
-
         for (auto it : mpp)
         {
             ans.push_back(it.second);
         }
-
         return ans;
     }
 };

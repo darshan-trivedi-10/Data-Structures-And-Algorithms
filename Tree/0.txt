@@ -1,0 +1,1 @@
+ Question - 14, 15, 23, 24 , 27 (I don't write code of this), 29, 30(Try Dry Run of this for all dfs Travesal), 31.

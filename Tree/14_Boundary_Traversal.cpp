@@ -1,18 +1,16 @@
 // https://www.codingninjas.com/codestudio/problems/boundary-traversal_790725
+
 #include <bits/stdc++.h>
 using namespace std;
 using lli = long long int;
 using ll = long long;
 #define endl '\n'
 
+// Following is the Binary Tree node structure:
 struct Node
 {
     int data;
-    Node *left;
-    Node *right;
-    Node() : data(0), left(nullptr), right(nullptr) {}
-    Node(int x) : data(x), left(nullptr), right(nullptr) {}
-    Node(int x, Node *left, Node *right) : data(x), left(left), right(right) {}
+    Node *left, *right;
 };
 
 class Solution
@@ -35,6 +33,7 @@ class Solution
                 cur = cur->right;
         }
     }
+    
     void addRightBoundary(Node *root, vector<int> &res)
     {
         Node *cur = root->right;
