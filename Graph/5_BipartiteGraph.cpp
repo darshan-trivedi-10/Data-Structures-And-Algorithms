@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/is-graph-bipartite/
-
 #include <bits/stdc++.h>
 using namespace std;
 
