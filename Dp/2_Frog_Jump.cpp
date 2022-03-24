@@ -1,5 +1,5 @@
 // https://takeuforward.org/data-structure/dynamic-programming-frog-jump-dp-3/
-// Problem Link :- https://www.codingninjas.com/codestudio/problems/frog-jump_3621012
+// Problem Link :- https://atcoder.jp/contests/dp/tasks/dp_a
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -77,6 +77,6 @@ int frogJump(int n, vector<int> &heights)
 
 int main()
 {
-    
+
     return 0;
 }
