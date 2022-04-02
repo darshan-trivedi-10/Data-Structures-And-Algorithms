@@ -9,65 +9,50 @@ struct triplet
     int a, b, c;
 };
 
-int const maxi = (int)(1e5 + 10);
-vector<triplet> arr(maxi);
-int dp[maxi][4];
-
 // Time Complexity : O(n x 4 x 2).
-int solve(int s, int n, int flag)
+int solve(vector<vector<int>> &points, vector<vector<int>> &dp, int day, int flag)
 {
-    if (s == n)
+    if (dp[day][flag] != -1)
     {
-        return 0;
+        return dp[day][flag];
     }
 
-    if (dp[s][flag] != -1)
+    if (day == 0)
     {
-        return dp[s][flag];
+        int maxi = 0;
+        for (int i = 0; i <= 2; i++)
+        {
+            if (i != flag)
+            {
+                maxi = max(maxi, points[day][i]);
+            }
+        }
+        return dp[day][flag] = maxi;
     }
 
-    int cost = INT_MIN;
-    if (flag == 0)
+    int maxi = 0;
+    for (int i = 0; i <= 2; i++)
     {
-        cost = max(cost, (arr[s].a + (int)solve(s + 1, n, 1)));
-        cost = max(cost, (arr[s].b + (int)solve(s + 1, n, 2)));
-        cost = max(cost, (arr[s].c + (int)solve(s + 1, n, 3)));
+        if (i != flag)
+        {
+            maxi = max(maxi, points[day][i] + solve(points, dp, day - 1, i));
+        }
     }
-    else if (flag == 1)
-    {
-        cost = max(cost, (arr[s].b + (int)solve(s + 1, n, 2)));
-        cost = max(cost, (arr[s].c + (int)solve(s + 1, n, 3)));
-    }
-    else if (flag == 2)
-    {
-        cost = max(cost, (arr[s].a + (int)solve(s + 1, n, 1)));
-        cost = max(cost, (arr[s].c + (int)solve(s + 1, n, 3)));
-    }
-    else
-    {
-        cost = max(cost, (arr[s].a + (int)solve(s + 1, n, 1)));
-        cost = max(cost, (arr[s].b + (int)solve(s + 1, n, 2)));
-    }
-
-    dp[s][flag] = cost;
-
-    return dp[s][flag];
+    return dp[day][flag] = maxi;
 }
 
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-
-    memset(dp, -1, sizeof dp);
     int n;
     cin >> n;
+    vector<vector<int>> points(n, vector<int>(3));
+    vector<vector<int>> dp(n, vector<int>(4, -1));
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i].a >> arr[i].b >> arr[i].c;
+        cin >> points[i][0] >> points[i][1] >> points[i][2];
     }
 
-    cout << solve(0, n, 0) << endl;
+    cout << solve(points, dp, n - 1, 3) << endl;
 
     return 0;
 }
