@@ -9,9 +9,9 @@ class Solution
 {
     bool findSubset(vector<int> &arr, vector<vector<int>> &dp, int sum, int idx)
     {
-        if (sum == 0)
+        if (sum <= 0)
         {
-            return true;
+            return sum == 0;
         }
 
         if (idx == 0)
@@ -54,7 +54,9 @@ public:
         }
 
         if (arr[0] <= k)
+        {
             dp[0][arr[0]] = true;
+        }
 
         for (int ind = 1; ind < n; ind++)
         {
@@ -65,7 +67,9 @@ public:
 
                 bool taken = false;
                 if (arr[ind] <= target)
+                {
                     taken = dp[ind - 1][target - arr[ind]];
+                }
 
                 dp[ind][target] = notTaken || taken;
             }
