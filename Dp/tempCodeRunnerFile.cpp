@@ -1,2 +1,0 @@
-
-    int n = num.size();
